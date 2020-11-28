@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>JavaScript Projects</title>
+</head>
+<body>
+    <br>
+    <!--Age in Days-->
+    <!--<div class="container-1">
+        <h2>Your Age In Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me!</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>-->
+
+    <!--Cat Generator-->
+    <!--<div class="container-2">
+        <h2>Cat Generator</h2>
+        <div class="flex-box-container-2">
+                <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-2" id="flex-cat-gen"></div>
+    </div>-->
+
+    <!--Rock paper Scissors-->
+    <br><br><br><br><br><br>
+    <div class="container-3">
+        <br>
+        <h2>Rock, Paper, Scissors!</h2><br>
+        <div class="flex-box-container-3" id="flex-box-rps">
+            <img id="rock" src="https://lh3.googleusercontent.com/proxy/Y8gI9pB_-t_8HThFH2qcmWlc3aXhraa1BGPXWP6DkLZV9QdGQwcK8Xe9oRTPGBZ38BXPgy5wsdulKEWQa_pZNhTQgUxav6bPcw9DyWe217-Dlg9ixNx9YA" height=150 width=150 onclick="rpsGame(this.id)">
+            <img id="paper" src="data:image/png;base64,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" height=150 width=150 onclick="rpsGame(this.id)">
+            <img id="scissors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpL1RWdHYx6YDAW_cGkhvfLySXhSUQcTTLsQ&usqp=CAU" height=150 width=150 onclick="rpsGame(this.id)">            
+        </div><br>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
